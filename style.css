@@ -1,0 +1,80 @@
+body {
+  background-image: url("snow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+img {
+  position: absolute;
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+}
+.yimg {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+.rimg {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+}
+.rimg:hover {
+  animation: antiClockwiseRotation 2s infinite linear;
+}
+@keyframes antiClockwiseRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+.gimg {
+  position: absolute;
+  top: 18%;
+  left: 35%;
+  transition: 1s ease-in-out;
+}
+.gimg:hover {
+  transform: translate(4em, 0);
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.navigation {
+  width: 100%;
+  overflow: hidden;
+  background-color: #06344b;
+}
+
+.navigation a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 17px;
+  text-decoration: none;
+  font: 17px arial, sans-serif;
+}
+
+.navigation a:hover {
+  background-color: #9ad2ee;
+  color: black;
+}
+h1 {
+  font-size: 55px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
